@@ -1,4 +1,4 @@
-SELECT teachers.name AS teacher, cohorts.name AS cohort, COUNT(assistance_requests) as total_assistances
+SELECT teachers.name AS teacher, cohorts.name AS cohort, COUNT(assistance_requests) AS total_assistances
 FROM teachers
 JOIN assistance_requests ON teachers.id = teacher_id
 JOIN students ON students.id = student_id
